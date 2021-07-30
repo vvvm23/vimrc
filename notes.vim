@@ -34,7 +34,7 @@ nnoremap <leader>cd :cd %:h<CR>
 
 " CtrlP function for inserting a markdown link with Ctrl-X
 function! CtrlPOpenFunc(action, line)
-   if a:action =~ '^h$'    
+   if a:action =~ '^t$'    
       " Get the filename
       let filename = fnameescape(fnamemodify(a:line, ':t'))
 	  let filename_wo_timestamp = fnameescape(fnamemodify(a:line, ':t:s/\d\+-//'))
