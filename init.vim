@@ -35,17 +35,8 @@ set number
 " set undofile
 set undofile
 
-" rebind window movement
-nnoremap <C-h> <C-W>h
-nnoremap <C-l> <C-W>l
-nnoremap <C-k> <C-W>k
-nnoremap <C-j> <C-W>j
-
 " set to system clipboard
 set clipboard=unnamedplus
-
-" fix last spelling error
-imap <c-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " disable hlsearch
 set nohlsearch
@@ -56,5 +47,7 @@ set ignorecase
 " set textwidth and spell checking in certain files
 autocmd BufReadPre *.txt,*.md,*.tex setlocal textwidth=80 spell
 
+" source custom bindings
+source binds.vim
 " source note taking settings
 source notes.vim
