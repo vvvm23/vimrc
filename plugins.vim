@@ -10,6 +10,7 @@ Plug 'dikiaap/minimalist'
 Plug 'lervag/vimtex'
 Plug 'Shougo/deoplete.nvim'
 Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'sebastianmarkow/deoplete-rust'
 "Plug 'deoplete-plugins/deoplete-dictionary', { 'for': [ 'markdown', 'text', 'tex' ] }
 call plug#end()
 
