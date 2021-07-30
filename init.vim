@@ -1,5 +1,5 @@
 filetype on
-source plugins.vim
+runtime plugins.vim
 
 "" standard nvim config ""
 " colours
@@ -52,7 +52,7 @@ autocmd BufReadPre *.txt,*.md,*.tex setlocal textwidth=80 spell
 " set dictionary
 set dictionary=/usr/share/dict/british
 
-" source custom bindings
-source binds.vim
+" source ings
+runtime binds.vim
 " source note taking settings
-source notes.vim
+runtime notes.vim
