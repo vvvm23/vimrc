@@ -1,3 +1,4 @@
+filetype on
 source plugins.vim
 
 "" standard nvim config ""
@@ -31,6 +32,7 @@ set timeoutlen=1000 ttimeoutlen=10
 
 " line numbers
 set number
+set relativenumber
 
 " set undofile
 set undofile
@@ -46,6 +48,9 @@ set ignorecase
 
 " set textwidth and spell checking in certain files
 autocmd BufReadPre *.txt,*.md,*.tex setlocal textwidth=80 spell
+
+" set dictionary
+set dictionary=/usr/share/dict/british
 
 " source custom bindings
 source binds.vim
